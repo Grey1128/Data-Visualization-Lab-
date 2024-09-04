@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="description"	content="Data Visualisation Exercise 1"/>
+	<meta name="keywords"		  content="HTML, CSS"/>
+	<meta name="author"			  content="Your name here"/>
+
+	<link rel="stylesheet" href="pet.css">
+	<link rel="stylesheet" type="text/css" href="/navigator.css">
+	<title>Task 1.2 HTML and CSS Demo Page</title>
+	<!--Insert description of exercise  -->
+
+	<style>
+
+
+	</style>
+
+</head>
+
+<body style="background-color: #ede4e3;">
+	<br>
+	<br>
+	<h1>Title of Article about Interesting Visualisation</h1>
+	<h2>Author of Interesting Article</h2>
+	<p>	
+		Pets and the Pandemic
+		A report from Animal Medicines Australia (AMA) has found that many Australians took the opportunity to introduce a pet into their household during the pandemic. 
+		Their survey indicated that there was a significant increase in the percent of households taking in a new dog, fish or bird. 
+		Their research also indicated that pets had a number of positive influences on their lives such as:
+	</p>
+
+	<ul>
+		<li>companionship</li>
+		<li>better mental health</li>
+		<li>joy and happiness.</li>
+	</ul>
+
+	<button class="button1" onclick="show('2019_Graph.png','Fig 1. Percent of most popular pet owned by Austrlians in 2019')">2019</button>
+	<button class="button2" onclick="show('2021_Graph.png','Fig 2. Percent of most popular pet owned by Australians in 2021')">2021</button>
+	<button class="button3" onclick="show('2019_2021_Graph.png','Fig 3. Percent of most popular pet owned by Australian in 2019 and 2021')">Both</button>
+
+	<figure>
+		<img id="Chartimage" style="width: 50%" style="display: none;">
+		<figcaption id="Chartcap"></figcaption>
+	</figure>
+
+	<script>
+		function show(Image, ImgDesc, ImgAlt){
+			document.getElementById("Chartimage").src = Image;
+			document.getElementById("Chartimage").alt = ImgAlt;
+			document.getElementById("Chartcap").innerHTML=ImgDesc;
+			document.getElementById("Chartimage").style.display='block';
+		}
+	</script>
+	<script src="/navigator.js"></script>
+	<footer>COS30045 Data Visualisation</footer>
+
+</body>
+</html>
