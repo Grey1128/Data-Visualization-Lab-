@@ -17,6 +17,14 @@ const labs = [
             { title: 'Lab 2.4', filePath: 'Lab_2/lab_2.4.html' },
         ],
     },
+    {
+        title: 'Lab 3',
+        subLabs: [
+            {title: 'Lab 3.1', filePath: 'Lab_3/Lab_3.1.html'},
+            {title: 'Lab 3.2', filePath: 'Lab_3/Lab_3.2.html'},
+        
+        ],
+    },
     
 ];
 
