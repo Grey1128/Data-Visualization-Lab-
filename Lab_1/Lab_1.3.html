@@ -43,7 +43,17 @@
         <rect x="310", y="170", width="50", height="5" fill="rgb(100, 149, 237)"/>
 
 	</svg>
-	
+
+	<script>
+
+			const backButton = document.createElement('a');
+	backButton.href = '../index.html';
+	backButton.textContent = 'Back to Main Menu';
+	backButton.className = 'back-to-main-menu';
+
+// Add the button to the top of the page
+	document.body.insertBefore(backButton, document.body.firstChild);
+	</script>
 	
 	<script src="/navigator.js"></script>
 	
