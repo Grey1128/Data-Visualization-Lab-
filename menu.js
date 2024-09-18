@@ -11,10 +11,10 @@ const labs = [
     {
         title: 'Lab 2',
         subLabs: [
-            { title: 'Lab 2.1', filePath: 'Lab_2/lab_2.1.html' },
-            { title: 'Lab 2.2', filePath: 'Lab_2/lab_2.2.html' },
-            { title: 'Lab 2.3', filePath: 'Lab_2/lab_2.3.html' },
-            { title: 'Lab 2.4', filePath: 'Lab_2/lab_2.4.html' },
+            { title: 'Lab 2.1', filePath: 'Lab_2/Lab_2.1.html' },
+            { title: 'Lab 2.2', filePath: 'Lab_2/Lab_2.2.html' },
+            { title: 'Lab 2.3', filePath: 'Lab_2/Lab_2.3.html' },
+            { title: 'Lab 2.4', filePath: 'Lab_2/Lab_2.4.html' },
         ],
     },
     {
