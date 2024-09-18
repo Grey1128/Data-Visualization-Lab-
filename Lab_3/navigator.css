@@ -1,0 +1,17 @@
+.back-to-main-menu {
+    position: flex;
+    align-items: center;
+    top: 20px;
+    left: 10px;
+    background-color: #1317eb;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .back-to-main-menu:hover {
+    background-color: #7689c9;
+    
+  }
