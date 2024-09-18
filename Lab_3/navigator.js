@@ -1,6 +1,6 @@
 // Create the button
 const backButton = document.createElement('a');
-backButton.href = '/index.html';
+backButton.href = 'DV_Lab.github.io/index.html';
 backButton.textContent = 'Back to Main Menu';
 backButton.className = 'back-to-main-menu';
 
