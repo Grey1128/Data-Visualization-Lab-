@@ -25,7 +25,29 @@ const labs = [
         
         ],
     },
-    
+    {
+        title: 'Lab 5',
+        subLabs: [
+            {title: 'Lab 5.1', filePath: 'Lab_5/Lab_5.1.html'},
+            {title: 'Lab 5.2', filePath: 'Lab_5/Lab_5.2.html'},
+            {title: 'Lab 5.3', filePath: 'Lab_5/Lab_5.3.html'},
+        ],
+    },
+    {
+        title: 'Lab 6',
+        subLabs: [
+            {title: 'Lab 6.1', filePath: 'Lab_6/Lab_6.1.html'},
+            {title: 'Lab 6.2', filePath: 'Lab_6/Lab_6.2.html'},
+        ],
+    },
+    {
+        title: 'Lab 7',
+        subLabs: [
+            {title: 'Lab 7.1', filePath: 'Lab_7/Lab_7.1.html'},
+            {title: 'Lab 7.2', filePath: 'Lab_7/Lab_7.2.html'},
+            {title: 'Lab 7.3', filePath: 'Lab_7/Lab_7.3.html'},
+        ],
+    },
 ];
 
 labs.forEach((lab, index) => {
