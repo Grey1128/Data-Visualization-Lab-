@@ -48,6 +48,13 @@ const labs = [
             {title: 'Lab 7.3', filePath: 'Lab_7/Lab_7.3.html'},
         ],
     },
+    {
+        title: 'Lab 8',
+        subLabs: [
+            {title: 'Lab 8.1', filePath: 'Lab_8/Lab_8.1.html'},
+            {title: 'Lab 8.2', filePath: 'Lab_8/Lab_8.2.html'},
+        ],
+    },
 ];
 
 labs.forEach((lab, index) => {
