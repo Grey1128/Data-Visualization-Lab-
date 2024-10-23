@@ -56,7 +56,7 @@ async function load() {
     
   } else {
     feature.properties.unemployment = 0;
-      console.log(`No match found for LGA: ${lga}`);
+
   }
   });
 
