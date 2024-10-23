@@ -18,6 +18,15 @@ var svg= d3.select("body")
             .attr("width",w)
             .attr("height",h);
           //  .attr("fill","grey");
+var tooltip=d3.select("body").append("div")
+                .attr("class", "tooltip")
+                .style("position", "absolute")
+                .style("background-color", "white")
+                .style("border", "1px solid #ccc")
+                .style("padding", "5px")
+                .style("border-radius", "5px")
+                .style("opacity", 0); 
+
 
 async function load() {
   //load json 
@@ -74,7 +83,21 @@ async function load() {
       .attr("cx",d=>projection([d.Longitude, d.Latitude])[0])
       .attr("cy", d=>projection([d.Longitude,d.Latitude])[1])
       .attr("r",2)
-      .attr("fill","red");
+      .attr("fill","red")
+      .on("mouseover",function(event,d){
+        tooltip.transition()
+                .duration(200)
+                .style("opacity", .9);
+        tooltip.html(d.City)
+                .style("left",(event.pageX+5)+"px")
+                .style("top",(event.pageY-28)+"px");
+      })
+      .on("mouseout",function(d){
+
+          tooltip.transition()
+                  .duration(500)
+                  .style("opacity", 0);
+      })
 
 
 }

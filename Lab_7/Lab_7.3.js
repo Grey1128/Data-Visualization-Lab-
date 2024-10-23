@@ -56,6 +56,27 @@ function init(){
                         .attr("height",d=>yScale(d[0])-yScale(d[1]))
                         .attr("width",xScale.bandwidth());
 
+    var legend = svg.append("g")
+                     .attr("transform","translate(10,50)");
+    
+    var categories = ["apples","oranges","grapes"];
+    
+        categories.forEach((category,i)=>{
+    
+            legend.append("rect")
+            .attr("x", 0)
+            .attr("y", i * 20) // Space out legend items
+            .attr("width", 18)
+            .attr("height", 18)
+            .style("fill", color(i));
+    
+        legend.append("text")
+            .attr("x", 25)
+            .attr("y", i * 20 + 15) // Center text vertically
+            .text(category);
+        })
+            
+
         
 
 
