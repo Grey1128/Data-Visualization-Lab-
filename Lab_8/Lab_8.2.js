@@ -21,13 +21,13 @@ var svg= d3.select("body")
 
 async function load() {
   //load json 
-  const json = await d3.json("/Lab_8/LGA_VIC.json");
+  const json = await d3.json("../Lab_8/LGA_VIC.json");
   
   //load unemployment csv
-  const unemploymentData = await d3.csv("/Lab_8/VIC_LGA_unemployment.csv");
+  const unemploymentData = await d3.csv("../Lab_8/VIC_LGA_unemployment.csv");
   
   //load city csv
-  const city = await d3.csv("/Lab_8/VIC_city.csv");
+  const city = await d3.csv("../Lab_8/VIC_city.csv");
 
   const unemploymentMap = {};
   unemploymentData.forEach(d => {
