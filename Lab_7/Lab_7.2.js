@@ -3,14 +3,14 @@ function init(){
     var dataset= [ 10,20,30,40,50];
     var pie= d3.pie();
 
-    pie(dataset);
+    var piedata=pie(dataset);
 
 
     var w=300;
     var h=300;
 
     var outerRadius= w/2;
-    var innerRadius= 0;
+    var innerRadius= w/3;
     var arc= d3.arc
                 .innerRadius(innerRadius)
                 .outerRadius(outerRadius);
@@ -22,8 +22,8 @@ function init(){
                 .attr("height",h);
 
 
-    var arcs= d3.selectAll("g.arc")
-                    .data(pie(dataset))
+    var arcs= svg.selectAll("g.arc")
+                    .data(piedata)
                     .enter()
                     .append("g")
                     .attr("class","arc")
@@ -35,7 +35,8 @@ function init(){
             .attr("d",(d,i)=>arc(d,i));
 
         arcs.append("text")
-             .text(d=>d.value)
+             .text(d=>d.data)
+             .attr("text-anchor","middle")
              .attr("transform",d=>"translate("+arc.centroid(d)+")");
         
         
