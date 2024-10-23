@@ -88,7 +88,7 @@ async function load() {
         tooltip.transition()
                 .duration(200)
                 .style("opacity", .9);
-        tooltip.html(d.City)
+        tooltip.html(d.place)
                 .style("left",(event.pageX+5)+"px")
                 .style("top",(event.pageY-28)+"px");
       })
