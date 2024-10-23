@@ -11,7 +11,7 @@ function init(){
 
     var outerRadius= w/2;
     var innerRadius= w/3;
-    var arc= d3.arc
+    var arc= d3.arc()
                 .innerRadius(innerRadius)
                 .outerRadius(outerRadius);
     var color=d3.scaleOrdinal(d3.schemeCategory10);
